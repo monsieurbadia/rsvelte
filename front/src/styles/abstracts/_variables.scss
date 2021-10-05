@@ -1,0 +1,26 @@
+// this file contains variables that are used in the whole app
+
+// prefix
+$prefix: rsv;
+
+// colors
+$color-black-100: hsl(0, 0%, 7%);
+$color-red-100: hsl(15, 100%, 50%);
+$color-white-100: hsl(0, 0%, 100%);
+
+// fonts family
+$font-family-open-sans: 'Open Sans', sans-serif;
+
+// fonts sizes
+$font-size-base: 1rem;
+$font-size-h1: 1.188rem;
+$font-size-h2: 1rem;
+$font-size-h3: 0.9rem;
+$font-size-link: 0.9rem;
+$font-size-title: 4rem;
+
+// fonts weights
+$font-weight-base: 400;
+$font-weight-light: 100;
+$font-weight-semibold: 600;
+$font-weight-bold: 800;

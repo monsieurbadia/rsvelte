@@ -1,0 +1,59 @@
+// thils file contains all sass functions that are used in the app
+
+// a wrapper function of `url(..)`
+// @param {string} $base - asset base URI for the asset.
+// @param {string} $type - asset type folder i.e `/images`, `/icons`.
+// @param {string} $path - asset path.
+// @return {url}
+@function asset($base, $type, $path) {
+  @return url($base + $type + $path);
+}
+
+// get a custom property value for a color
+// @param {string} $name - color name
+// @param {string} $prefix [rsv] - font prefix
+// @return {var}
+@function color($name, $prefix: rsv) {
+  @return var(--#{$prefix}-color-#{$name});
+}
+
+// get a custom property value for a font-family
+// @param {string} $name - font name
+// @param {string} $prefix [rsv] - font prefix
+// @return {var}
+@function font-family($name, $prefix: rsv) {
+  @return var(--#{$prefix}-font-family-#{$name});
+}
+
+// get a custom property value for a font-size
+// @param {string} $name - font size name
+// @param {string} $prefix [rsv] - font prefix
+// @return {var}
+@function font-size($name, $prefix: rsv) {
+  @return var(--#{$prefix}-font-size-#{$name});
+}
+
+// get a custom property value for a font-weight
+// @param {string} $name - font weight name
+// @param {string} $prefix [rsv] - font prefix
+// @return {var}
+@function font-weight($name, $prefix: rsv) {
+  @return var(--#{$prefix}-font-weight-#{$name});
+}
+
+// set a URI to an image asset
+// @param {string} $path - image path
+// @param {string} $base [$base-url] - base URL
+// @return {url}
+// @require $base-url
+@function image($path, $base: $base-url) {
+  @return asset($base, 'images/', $path);
+}
+
+// get a custom property value for a width
+// @param {string} $name - width name
+// @param {string} $prefix [rsv] - font prefix
+// @return {var}
+@function width($name, $prefix: rsv) {
+  @return var(--#{$prefix}-width-#{$name});
+}

@@ -1,0 +1,23 @@
+:root {
+  // color
+  --#{$prefix}-color-black-100: #{$color-black-100};
+  --#{$prefix}-color-red-100: #{$color-red-100};
+  --#{$prefix}-color-white-100: #{$color-white-100};
+
+  // font-family
+  --#{$prefix}-font-family-open-sans: #{$font-family-open-sans};
+
+  // font-size
+  --#{$prefix}-font-size-base: #{$font-size-base};
+  --#{$prefix}-font-size-h1: #{$font-size-h1};
+  --#{$prefix}-font-size-h2: #{$font-size-h2};
+  --#{$prefix}-font-size-h3: #{$font-size-h3};
+  --#{$prefix}-font-size-link: #{$font-size-link};
+  --#{$prefix}-font-size-title: #{$font-size-title};
+
+  // font-weight
+  --#{$prefix}-font-weight-base: #{$font-weight-base};
+  --#{$prefix}-font-weight-light: #{$font-weight-light};
+  --#{$prefix}-font-weight-semibold: #{$font-weight-semibold};
+  --#{$prefix}-font-weight-bold: #{$font-weight-bold};
+}
